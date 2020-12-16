@@ -12,3 +12,25 @@
 #photo-area.viewport canvas.drawingBuffer, video.drawingBuffer {
   margin-left: -320px;
 }
+
+
+.table_area{
+  max-width: 320px;
+}
+
+#history_table {
+  width : 100%; /* 画像を枠の100%の横幅にする */
+  height : auto; /* 高さは自動で設定する */
+
+}
+
+table{
+  border-collapse: collapse;
+  border: 2px solid #333; /* 外枠 */
+}
+
+table tr, table th {
+   border-style: solid dotted;/* 線種 */
+   border-width: 1px; /* 線の太さ */
+   border-color: gray; /* 線色 */
+}

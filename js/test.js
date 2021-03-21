@@ -6,7 +6,7 @@ $(function () {
 });
 
 let elem = document.getElementById("history_table");
-elem.innerHTML = '<tr><th>ID</th><th>作成日</th><th>作成者</th></tr>';
+elem.innerHTML = '<tr><th>ID</th><th>作成者</th></tr>';
 
 const startScanner = () => {
     Quagga.init({
@@ -120,8 +120,8 @@ let check_search = (result) => {
       let num= trans_list[0].indexOf(result);
       if(num!== -1){
         read.push(result);
-        html_hist = '<tr><th>'+pre_list[num][0]+'</th><th>'+pre_list[num][1]+'</th><th>'+pre_list[num][2]+'</th></tr>' + html_hist;
-        elem.innerHTML = '<tr><th>ID</th><th>作成日</th><th>作成者</th></tr>'+html_hist;
+        html_hist = '<tr><th>'+pre_list[num][0]+'</th><th>'+pre_list[num][2]+'</th></tr>' + html_hist;
+        elem.innerHTML = '<tr><th>ID</th><th>作成者</th></tr>'+html_hist;
       }else if(result.match(/^[A-Z]{4}$/)!==null){
         alert("このコードは\n"+result+"\nです");
       }
